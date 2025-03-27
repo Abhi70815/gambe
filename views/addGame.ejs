@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: sans-serif;
+            
+
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            width: 300px;
+            border:2px solid gray;
+        }
+        button{
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            border: 2px solid gray;
+            background: green;
+            color: white;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Add game</h1>
+    <form action="/addGame" method="post">
+        <input type="text" name="name" placeholder="enter your game name">
+        <input type="text" name="caterory" placeholder="enter game caterory">
+        <input type="text" name="image" placeholder="enter image link">
+        <input type="text" name="Url" placeholder="enter game Url">
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
